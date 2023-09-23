@@ -21,6 +21,9 @@ pipeline {
 
         stage("deploy") {
             steps {
+                  script {
+                    echo "Deploying the application..."
+                }
                 // script {
                 //     def dockerCmd = 'docker run -p 3080:3080 -d ryan02/demo-app:1.0'
                 //     sshagent(['ec2-server-key']) {
